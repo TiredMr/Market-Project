@@ -14,7 +14,7 @@ public class ProductController {
     // localhost:8080/product/list
     @GetMapping(path = "list")
     public List<Product> list() {
-        return List.of(new Product("Arroz"), new Product("Feijão"));
+        return List.of(new Product("Arroz", 10), new Product("Feijão", 5));
     }
 
 }
