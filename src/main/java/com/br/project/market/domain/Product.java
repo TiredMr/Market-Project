@@ -1,38 +1,18 @@
 package com.br.project.market.domain;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
 public class Product {
-  String name;
-  double weight;
-
-  public Product(String name, double weight) {
-    this.name = name;
-    this.weight = weight;
-  }
-
-  public Product() {
-
-  }
-
-  public String getName() {
-    return name;
-  }
-
-  public void setName(String name) {
-    this.name = name;
-  }
+  private Long id;
+  private String name;
+  private double weight;
 
   public void updateStock() {
   }
 
   public void checkAvailability() {
   }
-
-  public double getWeight() {
-    return weight;
-  }
-
-  public void setWeight(double weight) {
-    this.weight = weight;
-  }
-
 }
